@@ -6,7 +6,7 @@ import Faq from "../components/ui/home/Faq"
 
 export default function HomePage() {
     return(
-        <div>
+        <div className="my-6">
             <Hero/>
             <Products/>
             <Testimony/>

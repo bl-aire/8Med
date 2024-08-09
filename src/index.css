@@ -2,14 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+/* GENERAL */
+
 :root {
   --gray: #0c2e37;
+  --purple: #6D09F9;
+  --hero: #FFF7E4CC;
+  --heroDark: #FFD2E466;
 }
 
 *{
   color: var(--gray)
 }
 
+.logo{
+  width: 150px;
+}
+
+.button{
+  border-radius: 1.5rem;
+}
+
 .test{
   border: 1px solid red;
+}
+
+/* HEADER */
+
+.navlink:hover{
+  color: var(--purple);
+}
+
+.navbutton:hover{
+  background-color: var(--purple);
+}
+
+/* HOME */
+.hero{
+  background: linear-gradient(101.8deg, var(--hero) 39.92%, var(--heroDark) 100%);
+  border-radius:20px;
+}
+
+.perks{
+  border-bottom: 1px solid gray;
 }

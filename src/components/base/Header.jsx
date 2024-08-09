@@ -1,63 +1,60 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
+import { Navbar, Collapse, Typography, IconButton, Button, } from "@material-tailwind/react";
+
+import SelectMenu from "./Menu";
 
 import logo from "../../assets/8medical.svg"
-
-import {
-    Navbar,
-    Collapse,
-    Typography,
-    IconButton,
-    Button,
-} from "@material-tailwind/react";
-
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
 
 function NavList() {
     return (
-        <ul className="my-2 flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-6">
+        <ul className="my-2 py-6 flex flex-col gap-2 md:flex-row md:items-center md:gap-6">
             <Typography
                 as="li"
-                color="blue-gray"
                 className="p-1 font-medium"
             >
-                <Link to="/" className="flex items-center header-link transition-colors">
-                    Services
-                </Link>
+                <SelectMenu/>
             </Typography>
             <Typography
                 as="li"
-                color="blue-gray"
                 className="p-1 font-medium"
             >
-                <Link to="/" className="flex items-center">
+                <Link to="/" className="navlink">
                     Pricing
                 </Link>
             </Typography>
             <Typography
                 as="li"
-                color="blue-gray"
                 className="p-1 font-medium"
             >
-                <Link to="/" className="flex items-center">
+                <Link to="/" className="navlink">
                     Blog
                 </Link>
             </Typography>
             <Typography
                 as="li"
-                color="blue-gray"
                 className="p-1 font-medium"
             >
-                <Link to="/contact" className="flex items-center">
+                <Link to="/contact" className="navlink">
                     Contact Us
                 </Link>
             </Typography>
-
-            <Button className="green-button capitalize md:hidden lg:hidden">
-                <Link to="/contact">
-                    Panic Button
-                </Link>
-            </Button>
+            <div className="flex gap-2 justify-between md:hidden">
+                <Typography
+                    as="li"
+                    className="p-1 font-medium w-1/2"
+                >
+                    <Link to="/contact" className="navlink">
+                        Sign In
+                    </Link>
+                </Typography>
+                <Button className="button capitalize w-1/2 navbutton">
+                    <Link to="/contact">
+                        Getting Started
+                    </Link>
+                </Button>
+            </div>
         </ul>
     );
 }
@@ -77,33 +74,33 @@ export default function Header() {
     }, []);
 
     return (
-        <Navbar className="mx-auto w-screen px-6 py-3 shadow-none">
-            <div className="flex items-center justify-between text-blue-gray-900">
-                <div className="flex">
+        <Navbar className="max-w-full px-6 py-3 shadow-none">
+            <div className="w-full justify-between flex items-center      ">
+                <div className="flex items-center gap-[3rem]">
                     <Link to="/">
-                        <img src={logo} alt="Aura logo" className="cursor-pointer h-[40px] logo" />
+                        <img src={logo} alt="Aura logo" className="cursor-pointer logo" />
                     </Link>
-                    <div className="flex hidden lg:block ml-[10rem]">
+                    <div className="flex hidden md:block">
                         <NavList />
                     </div>
-
                 </div>
-
-                <div className="hidden lg:block">
-                    <Button className="green-button capitalize">
-                        <Link to="/contact">
-                            Panic Button
+                <div className="hidden md:block gap-6 md:flex items-center">
+                    <Typography
+                        className="p-1 font-medium"
+                    >
+                        <Link to="/">
+                            Sign In
+                        </Link>
+                    </Typography>
+                    <Button className="capitalize button navbutton lg:px-14">
+                        <Link to="/">
+                            Get Started
                         </Link>
                     </Button>
                 </div>
-
-
-
-
-
                 <IconButton
                     variant="text"
-                    className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+                    className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden"
                     ripple={false}
                     onClick={() => setOpenNav(!openNav)}
                 >
@@ -113,11 +110,6 @@ export default function Header() {
                         <Bars3Icon className="h-6 w-6" strokeWidth={2} />
                     )}
                 </IconButton>
-
-
-
-
-
             </div>
             <Collapse open={openNav}>
                 <NavList />
