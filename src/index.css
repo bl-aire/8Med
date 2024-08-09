@@ -19,7 +19,7 @@
   width: 150px;
 }
 
-.button{
+.button, .outline-button{
   border-radius: 1.5rem;
 }
 
@@ -33,7 +33,7 @@
   color: var(--purple);
 }
 
-.navbutton:hover{
+.navbutton:hover, .button:hover{
   background-color: var(--purple);
 }
 
@@ -43,6 +43,22 @@
   border-radius:20px;
 }
 
-.perks{
+.perks, .product-description{
   border-bottom: 1px solid gray;
+}
+
+.product-button:hover{
+  background: linear-gradient(94.31deg, #FC6720 -0.32%, #F34249 100%) !important;
+  color: white;
+  border: none;
+}
+
+.product-card:hover{
+  background: linear-gradient(101.8deg, rgba(255, 247, 228, 0.8) 0%, rgba(109, 9, 249, 0.2) 100%);
+}
+
+/* FAQ */
+
+.faq-container{
+  border-top: 1px solid rgba(128, 128, 128, 0.802);
 }

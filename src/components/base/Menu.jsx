@@ -33,7 +33,7 @@ export default function SelectMenu() {
                     />
                 </Typography>
             </MenuHandler>
-            <MenuList className="hidden w-[20rem] gap-3 overflow-visible grid">
+            <MenuList className="hidden w-[20rem] gap-3 overflow-visible grid border-none">
                 <ul className="flex w-full flex-col gap-1">
                     {menuItems.map(({ title, description }) => (
                         <a href="#" key={title}>
