@@ -4,7 +4,7 @@ import star from "../../../src/assets/star.svg"
 import star1 from "../../../src/assets/star1.png"
 import check from "../../../src/assets/check-purple.png"
 import checkorange from "../../../src/assets/check.svg"
-import knot from "../../../src/assets/thorus knot-2.svg"
+import knot from "../../../src/assets/thorus2.svg"
 
 
 

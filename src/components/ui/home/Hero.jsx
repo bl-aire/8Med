@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import useWindowSize from "../../../assets/hooks/useWindowSize";
 
 import mobileHero from "../../../assets/mobile-hero.svg"
-import desktopHero from "../../../assets/group 13272.png"
+import desktopHero from "../../../assets/desktop.png"
 import purpleKnot from "../../../assets/thorusknot.png"
 import check from "../../../assets/group.svg"
 import arrow from "../../../assets/fi_arrow-left.svg"
