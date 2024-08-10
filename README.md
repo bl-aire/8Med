@@ -19,7 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 A step by step guide that will tell you how to get the development environment up and running.
 
 ```
-$ git clone 
+$ git clone https://github.com/bl-aire/8Med.git
 $ cd 8med
 $ npm install
 $ npm run dev
