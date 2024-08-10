@@ -28,7 +28,7 @@ export default function Hero() {
                 </div>
                 <Typography
                     variant="h3"
-                    className="flex flex-col"
+                    className="flex flex-col mt-6"
                 >
                     <span className="text-[#6D09F9]">Get more affordable </span> Medication for your weightloss program
                 </Typography>
@@ -52,7 +52,7 @@ export default function Hero() {
                         <img src={check} alt="check icon" /> All inclusive pricing.
                     </Typography>
                 </ul>
-                <div className="flex items-center justify-between md:justify-start md:gap-8 py-6">
+                <div className="flex flex-col gap-4 md:flex-row items-center justify-between md:justify-start md:gap-8 py-6">
                     <Button className="button px-14 capitalize">Get Started</Button>
                     <Link to="/" className="flex items-center gap-3">
                         Explore pricing plans <img src={arrow} alt="" />

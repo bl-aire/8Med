@@ -33,7 +33,7 @@ export default function Products() {
                     </div>
                     <Typography
                         variant="h4"
-                        className="flex flex-col"
+                        className="flex flex-col mt-6"
                     >
                         <span>Budget-friendly weight loss</span> medications that actually work.
                     </Typography>

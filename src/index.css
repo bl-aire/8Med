@@ -43,8 +43,8 @@
   border-radius:20px;
 }
 
-.perks, .product-description{
-  border-bottom: 1px solid gray;
+.perks, .product-description, .why-item{
+  border-bottom: 1px solid #808080;
 }
 
 .product-button:hover{
@@ -56,6 +56,48 @@
 .product-card:hover{
   background: linear-gradient(101.8deg, rgba(255, 247, 228, 0.8) 0%, rgba(109, 9, 249, 0.2) 100%);
 }
+
+/* WHY US */
+
+.why-tag{
+  border: 1px solid rgba(128, 128, 128, 0.802);
+  border-radius: 1rem;
+}
+
+.why-cards{
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.self-pay{
+  background: linear-gradient(101.8deg, rgba(255, 247, 228, 0.8) 0%, rgba(255, 210, 228, 0.2) 100%);
+}
+
+.self-pay ul, .insurance ul{
+  border-top: 1px solid rgba(128, 128, 128, 0.802);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.802);
+  padding: 1.5rem 0;
+  margin-top: 1rem;
+}
+
+.insurance{
+  background: #F9FAF9;
+}
+
+.eight-med {
+  background: linear-gradient(164.76deg, rgba(255, 247, 228, 0.8) 0%, rgba(255, 210, 234, 0.2) 99.49%);
+}
+
+.others{
+  background: #F9FAF9;
+}
+
+.eight-med li, .others li, .why8med-listitem{
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.802);
+}
+
+
 
 /* FAQ */
 
