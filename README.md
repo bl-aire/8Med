@@ -33,3 +33,17 @@ $ ....view project at port 5173 (http://localhost:5173)
 ### Lessons
 
 * I learned new ways to modularize my code.
+
+### Demo
+
+<img width="1280" alt="Screenshot 2024-08-10 at 22 56 22" src="https://github.com/user-attachments/assets/83b0422a-b94c-45df-8a01-7dd5d7108152">
+
+<img width="1280" alt="Screenshot 2024-08-10 at 22 56 44" src="https://github.com/user-attachments/assets/b05de79b-5999-4f74-a814-c39398442a15">
+
+<img width="1280" alt="Screenshot 2024-08-10 at 22 57 10" src="https://github.com/user-attachments/assets/a62018b2-ff7b-4ad6-9511-e6c5021ba5ab">
+
+<img width="682" alt="Screenshot 2024-08-10 at 22 57 54" src="https://github.com/user-attachments/assets/50641fda-60bf-401e-ba65-59e41d777ad6">
+
+
+
+
