@@ -23,10 +23,10 @@ export default function SelectMenu() {
         <Menu open={openMenu} handler={setOpenMenu} allowHover>
             <MenuHandler>
                 <Typography
-
-                    className="flex items-center gap-3 text-base font-normal capitalize tracking-normal"
+                    as="li"
+                    className="flex items-center font-bold gap-3 capitalize tracking-normal"
                 >
-                    Services{" "}
+                    Services{" "} 
                     <ChevronDownIcon
                         strokeWidth={2.5}
                         className={`h-3.5 w-3.5 transition-transform ${openMenu ? "rotate-180" : ""}`}
