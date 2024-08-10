@@ -1,4 +1,4 @@
-import { Typography, Accordion, AccordionHeader, AccordionBody, } from "@material-tailwind/react"
+import { Typography, Accordion, AccordionHeader, AccordionBody, Spinner } from "@material-tailwind/react"
 import useSWR from 'swr';
 import React from "react";
 
@@ -22,8 +22,8 @@ export default function Faq() {
         isValidating,
     } = useSWR("https://eightmedical.onrender.com/faq", fetcher);
 
-    if (error) return <div className='failed'>failed to load</div>;
-    if (isValidating) return <div className="Loading">Loading...</div>;
+    /*if (error) return <div className='failed'>failed to load</div>;*/
+    if (isValidating) return <div className="Loading mx-auto"><Spinner /></div>;
 
     return (
         <div className="w-[100%] bg-[#F5F7F5] py-16 px-6">
@@ -51,8 +51,6 @@ export default function Faq() {
                     ))
                 }
             </div>
-
-
         </div>
     )
 }

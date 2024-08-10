@@ -8,8 +8,6 @@ import knot from "../../../src/assets/thorus knot-2.svg"
 
 
 
-
-
 export function ProductCard(props) {
 
     const { discount, price, image, name, description } = props

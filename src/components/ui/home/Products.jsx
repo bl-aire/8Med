@@ -1,5 +1,5 @@
 import useSWR from 'swr';
-import { Typography, Button } from "@material-tailwind/react";
+import { Typography, Button, Spinner } from "@material-tailwind/react";
 import React from 'react';
 
 import arrow from "../../../assets/fi_arrow-left.svg"
@@ -18,8 +18,8 @@ export default function Products() {
         isValidating,
     } = useSWR("https://eightmedical.onrender.com/products", fetcher);
 
-    if (error) return <div className='failed'>failed to load</div>;
-    if (isValidating) return <div className="Loading">Loading...</div>;
+    /*if (error) return <div className='failed'>failed to load</div>;*/
+    if (isValidating) return <div className="Loading"><Spinner /></div>;
 
     return (
         <div className="py-12">
@@ -56,7 +56,6 @@ export default function Products() {
                             image={`https://eightmedical.onrender.com/${product.image}`}
                             key={key}
                         />
-
                     ))
                 }
             </div>
