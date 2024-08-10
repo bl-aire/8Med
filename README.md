@@ -10,7 +10,18 @@
 * TailwindCSS
 * Material Tailwind
 
-## Getting Started
+### Directory Structure
+
+The src folder contains the following:
+
+* Assets: Images and custom hook used in the project
+* Layout: The page's layout comprised of the Header and Footer component which are used across the pages (Home and Contact page)
+* Components: These are grouped into Base components and UI components.
+  - Base Components: Components shared by pages. E.g Header, Footer, Cards, Button component
+  - UI Components: Components for the Home and Contact page are found in subdirectories here.
+* Pages: Components created are used in the pages here.
+
+### Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 You are to clone the project's repository. And, when in its root directory, install its dependencies and run the project by following these steps:
