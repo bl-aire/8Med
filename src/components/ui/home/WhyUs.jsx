@@ -1,5 +1,7 @@
 import useWindowSize from "../../../assets/hooks/useWindowSize";
-import { DesktopGrid, Plans, MobileGrid } from "../../base/Cards"
+import { Plans } from "../../base/Cards";
+import { DesktopGrid } from "../../base/DesktopGrid";
+import { MobileGrid } from "../../base/MobileGrid";
 
 export default function WhyUs() {
 

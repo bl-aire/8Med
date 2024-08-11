@@ -9,7 +9,7 @@ const useWindowSize = () => {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            // eslint-disable-next-line no-inner-declarations
+
             function handleResize() {
                 setWindowSize({
                     width: window.innerWidth,
