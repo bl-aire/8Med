@@ -17,5 +17,3 @@ export default function WhyUs() {
         </div>
     )
 }
-
-//w-[100%] flex gap-6 flex-col lg:flex-row my-12 items-center justify-center
