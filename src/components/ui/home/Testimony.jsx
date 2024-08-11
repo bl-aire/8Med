@@ -36,7 +36,7 @@ export default function Testimony() {
             <div className='w-full mx-auto my-2 flex flex-col md:flex-row flex-wrap justify-center p-6 '>
                 {testimonies &&
                     testimonies.slice(0, 3).map((testimony, key) => (
-                        <div className="w-full mb-6 max-w-[16rem] mx-auto flex flex-col">
+                            <div className={`w-full mb-6 max-w-[16rem] mx-auto flex flex-col ${key % 2 == 1 && "md:flex-col-reverse"} `}>
                             <div className='w-full my-3'>
                                 <img src={`https://eightmedical.onrender.com/${testimony.profilePicture}`} alt="" className='rounded-[20px]' />
                             </div>

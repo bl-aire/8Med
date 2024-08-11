@@ -18,9 +18,9 @@ export function DesktopGrid() {
             <ul role="list" className="w-[80%] mx-auto grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-3 sm:gap-6">
                 <li className="flex gap-x-3">
                 </li>
-                <li className="flex gap-x-3">
+                <li className="flex gap-x-3 py-6">
                     <div className="mx-auto">
-                        <Typography variant="h6" className="text-center">
+                        <Typography variant="h5" className="text-center">
                             8Medical
                         </Typography>
                         <span className="flex mt-3 gap-2 why-tag px-2 items-center">
@@ -30,9 +30,9 @@ export function DesktopGrid() {
                         </span>
                     </div>
                 </li>
-                <li className="flex gap-x-3">
+                <li className="flex gap-x-3 py-6">
                     <div className="mx-auto">
-                        <Typography variant="h6" className="text-center">
+                        <Typography variant="h5" className="text-center">
                             Others
                         </Typography>
                         <span className="flex mt-3 gap-2 why-tag px-2 items-center">
