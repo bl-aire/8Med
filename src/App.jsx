@@ -12,8 +12,9 @@ import './App.css'
 
 function App() {
 
-  //if (process.env.NODE_ENV === 'prod' ) clarity.init("nvd25h7exz")
-  clarity.init("nvd25h7exz");
+  if (process.env.NODE_ENV === 'production' ) clarity.init("nvd25h7exz")
+  //clarity.init("nvd25h7exz");
+  console.log(process.env.NODE_ENV)
 
   ReactGA.initialize("G-23C8DJ5T38");
 
