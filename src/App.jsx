@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from 'react';
 import ReactGA from "react-ga4";
 
 import Layout from "./layout";
@@ -9,8 +10,14 @@ import Contact from "./components/ui/contact/Contact";
 import './App.css'
 
 function App() {
-  
+
   ReactGA.initialize("G-23C8DJ5T38");
+
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
 
   return (
     <BrowserRouter>

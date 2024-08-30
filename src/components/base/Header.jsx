@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from 'react-ga';
 import { Outlet, Link } from "react-router-dom";
 import { Navbar, Collapse, Typography, IconButton, Button, } from "@material-tailwind/react";
 
@@ -8,6 +9,15 @@ import logo from "../../assets/8medical.svg"
 import { Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
 
 function NavList() {
+
+    function handleClick() {
+        ReactGA.event({
+          category: 'Button Click',
+          action: 'Clicked on Buy Now',
+          label: 'Product Page',
+        });
+      }
+
     return (
         <ul className="my-2 py-6 flex flex-col gap-2 md:flex-row md:items-center md:gap-6">
             <Typography
@@ -49,7 +59,7 @@ function NavList() {
                         Sign In
                     </Link>
                 </Typography>
-                <Button className="button capitalize w-1/2 navbutton">
+                <Button className="button capitalize w-1/2 navbutton" onClick={handleClick}>
                     <Link to="/contact">
                         Getting Started
                     </Link>
