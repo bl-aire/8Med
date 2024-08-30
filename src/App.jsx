@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 import ReactGA from "react-ga4";
 import { clarity } from "react-microsoft-clarity";
 
@@ -12,19 +12,20 @@ import './App.css'
 
 function App() {
 
-  //if (process.env.NODE_ENV === 'production' ) clarity.init("nvd25h7exz")
-  clarity.init("nvd25h7exz")
+  //if (process.env.NODE_ENV === 'prod' ) clarity.init("nvd25h7exz")
+  clarity.init("nvd25h7exz");
+
   ReactGA.initialize("G-23C8DJ5T38");
 
   /*if (clarity.hasStarted) {
     clarity.identify('userid', {user})
   }*/
 
-  const location = useLocation();
+  /*const location = useLocation();
 
   useEffect(() => {
     ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+  }, [location]);*/
 
   return (
     <BrowserRouter>
